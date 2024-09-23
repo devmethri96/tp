@@ -9,7 +9,7 @@ pipeline{
 
         choice(name: 'action', choices: 'create\ndelete', description: 'Choose create/Destroy')
         string(name: 'ImageName', description: "name of the docker build", defaultValue: 'service')
-        string(name: 'ImageTag', description: "tag of the docker build", defaultValue: 'dev')
+        string(name: 'ImageTag', description: "tag of the docker build", defaultValue: 'v1')
         string(name: 'DockerHubUser', description: "name of the Application", defaultValue: 'devmethri')
     }
 
@@ -110,4 +110,8 @@ pipeline{
             }
         }      
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7e0c39d594fa0f30b10e2399aa7a21443636dc67
